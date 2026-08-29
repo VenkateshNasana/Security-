@@ -1,0 +1,11 @@
+
+.PHONY: start build test
+
+start:
+	docker compose up -d
+
+build:
+	docker compose build
+
+test:
+	cd backend && pytest
